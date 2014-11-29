@@ -1,5 +1,5 @@
 <?php
-namespace bruninoit\bannerpca\event;
+namespace bruninoit\pcabanner\event;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class listener implements
 EventSubscriberInterface{
