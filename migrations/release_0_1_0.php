@@ -15,7 +15,7 @@ class release_0_1_0 extends \phpbb\db\migration\migration
 		return array(
 			array('config.add', array('banner_header', '')),
 			array('config.add', array('banner_footer', '')),
-			array('config.add', array('banner_postr', '')),
+			array('config.add', array('banner_post', '')),
 			array('module.add', array(
 				'acp',
 				'ACP_CAT_DOT_MODS',
