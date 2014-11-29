@@ -33,7 +33,7 @@ return array(
 ); //cambio evento
 }
 public function setup($event) {
-file di lingua
+//file di lingua
 $lang_set_ext = $event['lang_set_ext'];
 $lang_set_ext[] = array(
 'ext_name' => 'bruninoit/pcabanner',
