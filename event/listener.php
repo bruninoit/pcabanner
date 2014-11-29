@@ -33,20 +33,22 @@ return array(
 ); //cambio evento
 }
 public function setup($event) {
-//file di lingua
-//$lang_set_ext = $event['lang_set_ext'];
-//$lang_set_ext[] = array(
-'ext_name' => 'staffit/toptentopics',
+file di lingua
+$lang_set_ext = $event['lang_set_ext'];
+$lang_set_ext[] = array(
+'ext_name' => 'bruninoit/pcabanner',
 'lang_set' => 'common',
 );
-//$event['lang_set_ext'] = $lang_set_ext;
+$event['lang_set_ext'] = $lang_set_ext;
 //lingua end
 
 //codice start
 $header=$this->config['banner_header'];
 $footer=$this->config['banner_footer'];
-$this->template->assign_var('BANNER_HEADER', $config_position);
-$this->template->assign_var('BANNER_FOOTER', $config_guest);
+$post=$this->config['banner_post'];
+$this->template->assign_var('BANNER_HEADER', $header);
+$this->template->assign_var('BANNER_FOOTER', $footer);
+$this->template->assign_var('BANNER_POST', $post);
 //banner tra primo e secondo post
 //codice end
 }
