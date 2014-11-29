@@ -17,9 +17,9 @@ class main_module
 			{
 				trigger_error('FORM_INVALID');
 			}
-			$config->set('banner_header', $request->variable('banner_header', 0));
-			$config->set('banner_footer', $request->variable('banner_footer', 0));
-			$config->set('banner_post', $request->variable('banner_post', 0));
+			$config->set('banner_header', $request->variable('banner_header', '', true));
+			$config->set('banner_footer', $request->variable('banner_footer', '', true));
+			$config->set('banner_post', $request->variable('banner_post', '', true));
 			trigger_error($user->lang('ACP_BANNER_SAVED') . adm_back_link($this->u_action));
 		}
 		$template->assign_vars(array(
