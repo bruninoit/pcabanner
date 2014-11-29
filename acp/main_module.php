@@ -10,7 +10,7 @@ class main_module
 		$user->add_lang('acp/common');
 		$this->tpl_name = 'banner_body';
 		$this->page_title = $user->lang('ACP_BANNER_TITLE');
-		add_form_key('runinoit/pcabanner');
+		add_form_key('bruninoit/pcabanner');
 		if ($request->is_set_post('submit'))
 		{
 			if (!check_form_key('bruninoit/pcabanner'))
