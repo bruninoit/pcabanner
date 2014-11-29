@@ -1,5 +1,15 @@
 <!-- INCLUDE overall_header.html -->
 <h1>{L_SETTINGS}</h1>
-<form id="acp_board" method="post" action="{U_ACTION}"> <fieldset> <dl> <dt><label for="banner">{L_BANNER_HEADER}</label></dt> <dd><textarea class="textarea" name="banner_header">{BANNER_HEADER}</textarea></dd> <dt><label for="banner">{L_BANNER_FOOTER}</label></dt> <dd><textarea class="textarea" name="banner_footer">{BANNER_FOOTER}</textarea></dd> </dl> <p class="submit-buttons"> <input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp; <input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" /> </p>
+<form id="acp_board" method="post" action="{U_ACTION}"> <fieldset> 
+<dl>  <dt><label for="banner">{L_BANNER_HEADER}</label></dt> 
+      <dd><textarea class="textarea" name="banner_header" cols="50" rows="6">{BANNER_HEADER}</textarea></dd>
+      <dt><label for="banner">{L_BANNER_FOOTER}</label></dt>
+      <dd><textarea class="textarea" name="banner_footer" cols="50" rows="6">{BANNER_FOOTER}</textarea></dd>
+      <dt><label for="banner">{L_BANNER_POST}</label></dt>
+      <dd><textarea class="textarea" name="banner_post" cols="50" rows="6">{BANNER_POST}</textarea></dd>
+</dl>
+      <p class="submit-buttons"> 
+      <input class="button1" type="submit" id="submit" name="submit" value="{L_SUBMIT}" />&nbsp; 
+      <input class="button2" type="reset" id="reset" name="reset" value="{L_RESET}" /> </p>
 {S_FORM_TOKEN} </fieldset></form>
 <!-- INCLUDE overall_footer.html -->
