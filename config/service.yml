@@ -1,0 +1,8 @@
+services:
+    bruninoit.pcabanner.listener:
+        class: bruninoit\pcabanner\event\listener
+        arguments:
+            - @config
+            - @template
+        tags:
+            - { name: event.listener }
