@@ -4,7 +4,7 @@ class release_0_1_0 extends \phpbb\db\migration\migration
 {
 	public function effectively_installed()
 	{
-		return isset($this->config['banner_header']);
+		return isset($this->config['banner']);
 	}
 	static public function depends_on()
 	{
